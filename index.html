@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My TODO -List</h1>
+    <div class="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task...">
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button id="add-todo-btn">Add</button>
+      
+    </div>
+    
+    <p id="error-message" class="hidden">Please enter a valid task!</p>
+    <p id="open-count">Open tasks: 0</p>
+
+    <div class="filter-buttons">
+      <button id="show-all-btn">Show All</button>
+      <button id="show-active-btn">Show Active</button>
+      <button id="show-completed-btn">Show Completed</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
